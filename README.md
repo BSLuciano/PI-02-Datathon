@@ -34,7 +34,16 @@ Preprosesamiento de datos:
 
 ## 2- Resolución del problema
 
-Una vez realizadas las etapas anteriores se procedió a seleccionar un modelo. Como el objetivo es clasificar decidí utilizar Random Forest del módulo sklearn. Busqué los hiperparámetros que dieran el mejor ajuste y evalué el modelo con las métricas de accuracy y recall.
+Una vez realizadas las etapas anteriores se procedió a seleccionar un modelo. Como el objetivo es clasificar decidí utilizar "Random Forest" del módulo sklearn. Optimicé el modelo buscando los hiperparámetros que dieran el mejor ajuste, para ello empleé "GridSearCV". Además apliqué técnicas de cross validation, en éste caso "Stratified K-fold", con el objetivo de garantizar que el resultado del modelo no está relacionado a la técnica utilizada para dividir el set de datos en conjunto de train y test, "Statified K-fold" es una variante mejorada de "K-fold" que tiene la ventaja de mantener equilibradas las clases cuando hace los splits.Para finalizar, evalué el modelo con las métricas de accuracy y recall.
+
+## Resultado:
+
+Resultados verificados al realizar la predicción sobre el set de test (objetivo).
+
+                                  RECALL        ACCURACY 
+                                  0.7477401314	0.9025564686
+
+
 
 
 
